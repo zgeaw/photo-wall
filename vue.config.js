@@ -12,8 +12,14 @@ module.exports = {
     overlay: {
       warnings: false,
       errors: true
+    },
+    proxy: {
+      // 以cim6d开头的 都会被这个匹配到
+      "/photoBase": {
+        target: "d:/gitHub/photo",
+        changeOrigin: true
+      }
     }
   },
-  chainWebpack(config) {
-  }
+  chainWebpack(config) {}
 };
