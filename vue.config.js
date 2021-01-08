@@ -6,7 +6,7 @@ function resolve(dir) {
 
 module.exports = {
   runtimeCompiler: true,
-  publicPath: "/",
+  publicPath: "./",
   devServer: {
     port: 8081,
     overlay: {
